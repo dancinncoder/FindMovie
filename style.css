@@ -1,0 +1,223 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: black;
+  color: white;
+}
+
+
+/*----------------------- header -----------------------  */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: space-between;
+  width: 100%;
+  height: 7rem;
+  /* border: 1px solid red; */
+}
+
+header > img {
+  align-self: flex-start;
+  width: 17rem;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  align-self: center;
+}
+
+.engine_button_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 7rem;
+  width: 50rem;
+  /* border: 1px solid pink; */
+}
+
+.search_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 7rem;
+  margin-top: 0;
+  /* border: 1px solid red;; */
+}
+
+.searchbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  /* border: 1px solid green; */
+}
+
+.type_area > form{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  /* border: solid 1px blue; */
+}
+
+.type_area > form > input:focus{
+  border-color: yellow;
+  outline: none;
+}
+
+.typebox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  border-color: white;
+  width: 40rem;
+  height: 2.3rem;
+  border: 0.1px solid white;
+  margin: 5px 5px 5px 5px;
+  background-color: black;
+  padding: 1px 15px 1px 15px;
+  color: white;
+  font-size: 1rem;
+}
+
+select {
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  font-size: 0.97rem;
+  margin-left: 5px;
+  font-weight: 800;
+  background-color: black;
+  color: white;
+}
+
+.shortcutbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height:1rem;
+  font-size: 1 rem;
+  margin: 6px 135px 6px 0;
+  /* border: 1px solid yellow; */
+}
+
+.shortcutbox > li {
+  margin: 1rem;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.shortcutbox > li > a {
+  text-decoration: none;
+  color: #b9b2b2c7;
+  transition:  transform .2s;
+}
+
+.shortcutbox > li > a:hover {
+  transform: scale(1.01);
+  color: yellow;
+}
+
+.screen_mode_area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen_mode_area > img {
+  width: 2.5rem;
+  align-self: flex-end;
+  margin-right: 30px;
+  margin-left: 100px;
+}
+
+
+
+/* light mode icon from
+<a target="_blank" href="https://icons8.com/icon/648/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+/* dark mode icon form <a target="_blank" href="https://icons8.com/icon/54382/crescent-moon">Moon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
+
+
+
+/*----------------------- main -----------------------  */
+
+/* main {
+
+}
+
+.list_area {
+
+} */
+
+.list_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 180px 50px 100px 50px;
+}
+
+.movie_card {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content:start;
+  width: 14rem;
+  height: 41rem;
+  margin: 20px 20px 80px 20px;
+  padding: 0 0 5px 0;
+  border-radius: 20px;
+  transition:  transform .5s;
+  cursor: pointer;
+}
+
+.movie_card:hover {
+  transform: scale(1.03);
+}
+
+.movie_card > img {
+  width: 14rem;
+  height:18rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie_card > p {
+  font-size: 0.95rem;
+  margin: 45px 3px 0 3px;
+}
+
+.title_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: left;
+  height: 3.5rem;
+  padding: 8px 1px 1px 0;
+  /* border: 1px solid pink; */
+}
+
+.title_box > h3 {
+  font-size: 1.1rem;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.title_box > p {
+  font-size: 0.9rem;
+  color: yellow;
+  margin: 0 0 5px 5px;
+}
