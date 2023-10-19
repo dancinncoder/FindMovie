@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FindMovie</title>
+  <!--CSS 연결-->
+  <link rel="stylesheet" href="./style.css">
+  <!--jQuery 사용-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="#"><img src="./asset/FindMovie_logo.png"></a>
+    <div class="search_area">
+      <div class="searchbox">
+        <div type="text" class="type_area">
+          <form id="engin_button_box" class="engine_button_box">
+            <form class="search_area" id="search_area">
+              <input id="search_input" class="typebox" type="text" placeholder="Search" autocomplete="off" required />
+              <select>
+                <option id="movie_title" value="movie_title" selected>Title</option>
+                <option id="movie_genre" value="movie_genre">Genre</option>
+              </select>
+            </form>
+          </form>
+
+        </div>
+        <ul class="shortcutbox">
+          <li><a href="#">All</a></li>
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Romance</a></li>
+          <li><a href="#">Drama</a></li>
+          <li><a href="#">Horror</a></li>
+          <li><a href="#">ETC</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="screen_mode_area">
+      <img src="./asset/daymod_white_s_60.png">
+    </div>
+  </header>
+  <main>
+    <div id="list_area" class="list_area">
+
+    </div>
+  </main>
+  <!--JavaScript 연결-->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
