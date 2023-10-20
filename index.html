@@ -13,33 +13,24 @@
 
 <body>
   <header>
-    <a href="#"><img src="./asset/FindMovie_logo.png"></a>
+    <a id="go_home_btn" href="#"><img src="./asset/FindMovie_logo.png"></a>
     <div class="search_area">
       <div class="searchbox">
         <div type="text" class="type_area">
           <form id="engin_button_box" class="engine_button_box">
             <form class="search_area" id="search_area">
               <input id="search_input" class="typebox" type="text" placeholder="Search" autocomplete="off" required />
-              <select>
-                <option id="movie_title" value="movie_title" selected>Title</option>
-                <option id="movie_genre" value="movie_genre">Genre</option>
-              </select>
+              <button id="search_btn" class="search_btn">
+                <img id="search_icon" src="./asset/search_icon_50.png"/>
+                <img id="refresh_icon" src="./asset/refresh_icon_64.png"/>
+              </button>
             </form>
           </form>
-
         </div>
-        <ul class="shortcutbox">
-          <li><a href="#">All</a></li>
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Romance</a></li>
-          <li><a href="#">Drama</a></li>
-          <li><a href="#">Horror</a></li>
-          <li><a href="#">ETC</a></li>
-        </ul>
       </div>
     </div>
-    <div class="screen_mode_area">
-      <img src="./asset/daymod_white_s_60.png">
+    <div class="sub_option_area">
+      <img id="info_icon" src="./asset/information-50 .png"/>
     </div>
   </header>
   <main>

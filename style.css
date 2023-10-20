@@ -29,7 +29,6 @@ header > img {
   margin-right: 10px;
   margin-top: 10px;
   margin-left: 10px;
-  align-self: center;
 }
 
 .engine_button_box {
@@ -56,7 +55,9 @@ header > img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
+  height: 5rem;
+  margin-top: 14px;
   /* border: 1px solid green; */
 }
 
@@ -90,84 +91,62 @@ header > img {
   font-size: 1rem;
 }
 
-select {
-  width: 7rem;
-  height: 2.5rem;
-  text-align: center;
-  font-size: 0.97rem;
+.search_btn {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: center;
+ height: 2.8rem;
+ background-color: transparent;
+ border: none;
+}
+
+#search_icon {
+  height: 2.8rem;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+#refresh_icon {
+  height: 2.2rem;
   margin-left: 5px;
-  font-weight: 800;
-  background-color: black;
-  color: white;
+  cursor: pointer;
 }
 
-.shortcutbox {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  height:1rem;
-  font-size: 1 rem;
-  margin: 6px 135px 6px 0;
-  /* border: 1px solid yellow; */
-}
 
-.shortcutbox > li {
-  margin: 1rem;
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.shortcutbox > li > a {
-  text-decoration: none;
-  color: #b9b2b2c7;
-  transition:  transform .2s;
-}
-
-.shortcutbox > li > a:hover {
-  transform: scale(1.01);
-  color: yellow;
-}
-
-.screen_mode_area {
+.sub_option_area {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  width: 10rem;
 }
 
-.screen_mode_area > img {
-  width: 2.5rem;
+#info_icon {
+  height: 2.2rem;
   align-self: flex-end;
-  margin-right: 30px;
-  margin-left: 100px;
+  margin: 0 10px 2px 10px;
+  cursor: pointer;
 }
 
+/* info icon from 
+<a target="_blank" href="https://icons8.com/icon/37303/information">Information</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
 
+/* search incon from 
+<a target="_blank" href="https://icons8.com/icon/12456/google-web-search">Google Web Search</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
 
-/* light mode icon from
-<a target="_blank" href="https://icons8.com/icon/648/sun">Sun</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-
-/* dark mode icon form <a target="_blank" href="https://icons8.com/icon/54382/crescent-moon">Moon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> */
-
-
+/* refresh incon from 
+<a target="_blank" href="https://icons8.com/icon/4aaibf6SmbMJ/reboot">Refresh</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>*/
 
 /*----------------------- main -----------------------  */
 
-/* main {
-
-}
-
-.list_area {
-
-} */
 
 .list_area {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 180px 50px 100px 50px;
+  margin: 130px 50px 100px 50px;
 }
 
 .movieCard {
